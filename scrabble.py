@@ -24,7 +24,7 @@ def woordscore(woord):
 
 #Invoer spelvariabelen
 
-spelers_en_woorden = {"player1": ["BLUE", "TENNIS", "EXIT"], "wordNerd": ["EARTH", "EYES", "MACHINE"], "Lexi Con": ["ERASER", "BELLY", "HUSKY"], "Prof Reader": ["ZAP", "COMA", "PERIOD"]}
+spelers_en_woorden = {"speler1": ["ARGWAAN", "nochtans", "Antidiluviaans"], "speler2": ["slim", "Intelligent", "kunstmatig"], "speler3": ["licht", "doNKer", "race"], "speler4": ["voorstel", "kip", "EI"]}
 
 
 #Toevoegen van woorden aan bestaande spelers
@@ -32,7 +32,7 @@ spelers_en_woorden = {"player1": ["BLUE", "TENNIS", "EXIT"], "wordNerd": ["EARTH
 def nieuw_woord(speler, woord):
   spelers_en_woorden[speler].append(woord)
   
-nieuw_woord("player1", "Quixotte")
+nieuw_woord("speler1", "Quixotte")
 
 
 #Leaderboard en updates ervan
