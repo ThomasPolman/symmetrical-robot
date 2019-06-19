@@ -1,21 +1,17 @@
 #Opgave 1
 
-def divisible_by_ten(nums):
-    lijst = []
-    for number in nums:
-        if number % 10 == 0:
-            lijst.append(number)
-    return lijst
+lijst = []
 
-def div_by_ten_count(nums):
+def div_by_ten(nums):
     count = 0
     for number in nums:
         if number % 10 == 0:
-            count += 1        
-    return count
+            lijst.append(number)
+            count += 1
+            
+    return count, lijst
 
-print(divisible_by_ten([20, 25, 30, 35, 40]))
-print(div_by_ten_count([20, 25, 30, 35, 40]))
+print(div_by_ten([20, 25, 30, 35, 40]))
 
 #Opgave 2
 
