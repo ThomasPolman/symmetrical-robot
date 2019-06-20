@@ -4,28 +4,32 @@
 #Write a program to find all Armstrong number in the range of 0 and 999.
 
 armstronglijst = []
-count = 0 
+count = 0
+
+def lancefunctie(number):
+    armstronglijst.append(str(number))
+    return armstronglijst
+
 for number in range(0, 1000):
     string = str(number)
     
     if len(string) == 3:
         if int(string[0]) ** 3 + int(string[1]) ** 3 + int(string[2]) **3 == number:
+            lancefunctie(number)
             count += 1
-            armstronglijst.append(str(number))
     
     elif len(string) == 2:
         if int(string[0]) ** 3 + int(string[1]) ** 3 == number:
+            lancefunctie(number)
             count += 1
-            armstronglijst.append(str(number))
 
     elif len(string) == 1:
         if int(string[0]) ** 3 == number:
+            lancefunctie(number)
             count += 1
-            armstronglijst.append(str(number))
-        else:
-            continue
+        
 
-print(armstronglijst)               
-print("Er zijn in totaal " + str(count) + " armstrong nummers tussen 0 en 1000.")
+print(armstronglijst)             
+print("Er zijn in totaal " + str(count) + " armstrong nummers tussen 0 en 1000."
 
     
