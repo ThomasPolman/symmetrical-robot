@@ -3,15 +3,21 @@
 lijst = []
 
 def div_by_ten(nums):
-    count = 0
+    
     for number in nums:
         if number % 10 == 0:
             lijst.append(number)
-            count += 1
             
-    return count, lijst
+    return lijst
 
-print(div_by_ten([20, 25, 30, 35, 40]))
+def count(nums):
+    
+    div_by_ten(nums)
+    
+    return len(lijst)
+
+
+print(count([20, 25, 30, 35, 40]))
 
 #Opgave 2
 
