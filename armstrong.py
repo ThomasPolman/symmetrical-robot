@@ -7,6 +7,7 @@ armstronglijst = []
 count = 0 
 for number in range(0, 1000):
     string = str(number)
+    
     if len(string) == 3:
         if int(string[0]) ** 3 + int(string[1]) ** 3 + int(string[2]) **3 == number:
             count += 1
